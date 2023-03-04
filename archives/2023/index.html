@@ -1,216 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>Archiv: 2023 | MsEspeon&#39;s Homepage</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="描述">
-<meta property="og:type" content="website">
-<meta property="og:title" content="MsEspeon&#39;s Homepage">
-<meta property="og:url" content="https://eephi.github.io/archives/2023/index.html">
-<meta property="og:site_name" content="MsEspeon&#39;s Homepage">
-<meta property="og:description" content="描述">
-<meta property="og:locale">
-<meta property="article:author" content="MsEspeon">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="MsEspeon's Homepage" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+<link rel="stylesheet" href="/styles/base.css">
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+<link rel="stylesheet" href="/styles/theme.css">
 
-  
+    <link rel="shortcut icon" href="/images/favicon.jpeg">
+    
+   <title>首页 - エーフィちゃんのホームページ（建設中）</title>
 <meta name="generator" content="Hexo 6.3.0"></head>
-
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">MsEspeon&#39;s Homepage</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">副标题</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://eephi.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
+	<div class="container">
+		<div class="terminal" id="terminal">
+			<p>Welcome to the Terminal Homepage!</p>
+		</div>
+		<div class="input">
+			<input type="text" id="command" autocomplete="off">
+			<button onclick="execute()">Enter</button>
+		</div>
+	</div>
+	<script>
+		function execute() {
+			const input = document.getElementById("command").value;
+			const terminal = document.getElementById("terminal");
+			const command = input.toLowerCase().trim();
+			let output = "";
 
-      <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2023" class="archive-year">2023</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/03/02/test-site/" class="archive-article-date">
-  <time class="dt-published" datetime="2023-03-02T21:56:19.000Z" itemprop="datePublished">Mar 2</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/03/02/test-site/">test_site</a>
-    </h1>
-  
+			switch (command) {
+				case "":
+					break;
+				case "help":
+					output = "List of available commands:\nhelp - show this message\nabout - display information about this page\ncontact - show contact information";
+					break;
+				case "about":
+					output = "This page was created using HTML, CSS, and JavaScript.\n\nAuthor: ChatGPT";
+					break;
+				case "contact":
+					output = "Email: chatgpt@gmail.com\nTwitter: @chatgpt\nGitHub: github.com/chatgpt";
+					break;
+				default:
+					output = "Command not found: " + input;
+					break;
+			}
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/03/02/hello-world/" class="archive-article-date">
-  <time class="dt-published" datetime="2023-03-02T21:52:54.000Z" itemprop="datePublished">Mar 2</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/03/02/hello-world/">Hello World</a>
-    </h1>
-  
+			const p = document.createElement("p");
+			p.textContent = "> " + input + "\n" + output;
+			terminal.appendChild(p);
+			terminal.scrollTop = terminal.scrollHeight;
+			document.getElementById("command").value = "";
+		}
 
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/03/02/test-site/">test_site</a>
-          </li>
-        
-          <li>
-            <a href="/2023/03/02/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 MsEspeon<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
+		// focus on the input field when the page loads
+		document.getElementById("command").focus();
+	</script>
 </body>
 </html>
