@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-<link rel="stylesheet" href="/styles/base.css">
+<link rel="stylesheet" href="/base.css">
 
     
-<link rel="stylesheet" href="/styles/theme.css">
+<link rel="stylesheet" href="/theme.css">
 
     <link rel="shortcut icon" href="/images/favicon.jpeg">
     
@@ -16,18 +16,22 @@
 <meta name="generator" content="Hexo 6.3.0"></head>
 <body>
 	<div class="container">
-		<div class="terminal" id="terminal">
-			<p>Welcome to the Terminal Homepage!</p>
-		</div>
-		<div class="input">
-			<input type="text" id="command" autocomplete="off">
-			<button onclick="execute()">Enter</button>
-		</div>
-	</div>
+        <div class="terminal" id="terminal">
+            <div class="output" id="output">Welcome to MsEspeon's Homepage!<br>Enter &#x60;help&#x60; for more information.<br><br></div>
+            <div class="input">
+                <span class="prefix">&gt;&nbsp;</span>
+                <input type="text" id="command" autocomplete="off" onkeypress="handleKeyPress(event)">
+            </div>
+        </div>
 	<script>
+		function handleKeyPress(event) {
+			if (event.keyCode === 13) {
+				execute();
+			}
+		}
 		function execute() {
 			const input = document.getElementById("command").value;
-			const terminal = document.getElementById("terminal");
+			const terminal = document.getElementById("output");
 			const command = input.toLowerCase().trim();
 			let output = "";
 
@@ -35,16 +39,13 @@
 				case "":
 					break;
 				case "help":
-					output = "List of available commands:\nhelp - show this message\nabout - display information about this page\ncontact - show contact information";
+					output = "The user guide has not been finished yet.";
 					break;
 				case "about":
-					output = "This page was created using HTML, CSS, and JavaScript.\n\nAuthor: ChatGPT";
-					break;
-				case "contact":
-					output = "Email: chatgpt@gmail.com\nTwitter: @chatgpt\nGitHub: github.com/chatgpt";
+					output = "来自1885的互联网偶像！王牌级gamer！" + "\n" + "关注永雏塔菲谢谢喵！";
 					break;
 				default:
-					output = "Command not found: " + input;
+					output = input + ": command not found";
 					break;
 			}
 
