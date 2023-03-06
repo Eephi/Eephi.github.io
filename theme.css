@@ -1,5 +1,5 @@
 body {
-    background-color: orange;
+    background-color: linear-gradient(to bottom, #4a4842 50%, #300a24 50%);
     color: white;
     font-family: monospace;
     font-size: 16px;
