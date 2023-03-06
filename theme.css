@@ -80,7 +80,7 @@ body {
 .container {
     background-color: #300a24;
     width: 100vw;
-    height: calc(100vh - 3em);
+    height: calc(100vh - 2em);
     overflow: auto;
     margin: 0 0 0 0;
     /*border-radius: 0 0 10px 10px;*/
