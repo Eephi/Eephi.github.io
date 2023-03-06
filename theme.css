@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to top, #4a4842 50%, #300a24 50%);
+    background-color: orange;
     color: white;
     font-family: monospace;
     font-size: 16px;
@@ -7,15 +7,15 @@ body {
 
 /*head*/
 .header-title {
-    width: 100vw;
-    margin: 0 auto 0 auto;
+    max-width: 1000px;
+    margin: 5vh auto 0 auto;
     display: block;
     font-size: 16px;
     text-align: center;
     height: 2em;
     line-height: 2em;
     color: white;
-    /*border-radius: 8px 8px 0 0;*/
+    border-radius: 8px 8px 0 0;
     background: #4a4842;
     position: relative;
 }
@@ -79,11 +79,11 @@ body {
 
 .container {
     background-color: #300a24;
-    width: 100vw;
-    height: calc(100vh - 2em);
+    max-width: 1000px;
+    height: 80vh;
     overflow: auto;
-    margin: 0 0 0 0;
-    /*border-radius: 0 0 10px 10px;*/
+    margin: 0 auto 0 auto;
+    border-radius: 0 0 10px 10px;
 }
 
 .output {
@@ -98,6 +98,7 @@ body {
     color: white;
     font-family: monospace;
     font-size: 16px;
+    margin: 0 0 0 1em;
 }
 
 .input {
@@ -112,7 +113,7 @@ body {
     border: none;
     font-family: monospace;
     font-size: 16px;
-    margin: 0 1em 0 0;
+
 }
 
 .input input:focus {
