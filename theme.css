@@ -2,20 +2,20 @@ body {
     background-color: orange;
     color: white;
     font-family: monospace;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /*head*/
 .header-title {
-    width: 60vw;
-    margin: 6vh auto 0 auto;
+    width: 100vw;
+    margin: 0 auto 0 auto;
     display: block;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     height: 2em;
     line-height: 2em;
     color: white;
-    border-radius: 8px 8px 0 0;
+    /*border-radius: 8px 8px 0 0;*/
     background: #4a4842;
     position: relative;
 }
@@ -79,31 +79,31 @@ body {
 
 .container {
     background-color: #300a24;
-    width: 60vw;
-    height: 85vh;
+    width: 100vw;
+    height: calc(100vh - 2em);
     overflow: auto;
-    margin: 0 auto 1em auto;
-    border-radius: 0 0 10px 10px;
+    margin: 0 0 0 0;
+    /*border-radius: 0 0 10px 10px;*/
 }
 
 .output {
     margin: 1em 1em 0 1em;
     color: white;
     font-family: monospace;
-    font-size: 14px;
+    font-size: 16px;
     white-space: pre-wrap;
 }
 
 .prefix {
     color: white;
     font-family: monospace;
-    font-size: 14px;
+    font-size: 16px;
     margin: 0 0 0 1em;
 }
 
 .input {
     font-family: monospace;
-    font-size: 14px;
+    font-size: 16px;
     margin: 0 1em 0 0;
 }
 
@@ -112,7 +112,7 @@ body {
     color: white;
     border: none;
     font-family: monospace;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .input input:focus {
