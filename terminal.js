@@ -16,7 +16,7 @@ function execute() {
             output = "The user guide has not been finished yet.";
             break;
         case "about":
-            output = "来自1885的互联网偶像！王牌级gamer！" + "\n" + "关注永雏塔菲谢谢喵！";
+            output = "来自1885的互联网偶像！王牌级gamer！" + "<br>" + "关注永雏塔菲谢谢喵！";
             break;
         default:
             output = input + ": command not found";
@@ -24,7 +24,9 @@ function execute() {
     }
 
     const p = document.createElement("p");
-    p.textContent = "you@eephibot:~$ " + input + "\n" + output;
+    p.innerHTML = "<br>" + output;
+    p.insertAdjacentHTML("afterbegin", `<span class="output-prefix">:~$ ` + input + "</span>");
+    p.insertAdjacentHTML("afterbegin", `<span class="output-username">you@eephibot</span>`);
     terminal.appendChild(p);
     terminal.scrollTop = terminal.scrollHeight;
     document.getElementById("command").value = "";

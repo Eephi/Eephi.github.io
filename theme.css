@@ -24,70 +24,30 @@ body {
 /*button*/
 .header-light {
     position: absolute;
-    top: 8px;
+    top: 0.65em;
     display: block;
-    height: 1em;
-    width: 1em;
-    border-radius: 1em;
+    height: 0.8em;
+    width: 0.8em;
+    border-radius: 0.8em;
 }
 
 .header-title .header-light:nth-child(1) {
-    left: 10px;
+    left: 1em;
     background: #e45c2d;
 }
 
-.header-light:nth-child(1)::before {
-    content: "x";
-    font-family: monospace;
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-    color: #4a4842;
-    font-size: 0.9em;
-    font-weight: bold;
-    text-align: center;
-}
-
 .header-title .header-light:nth-child(2) {
-    left: 30px;
+    left: 2.3em;
     background: #82817b;
-}
-
-.header-light:nth-child(2)::before {
-    content: "\2014";
-    font-family: monospace;
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 0.9em;
-    display: block;
-    color: #4a4842;
-    font-weight: bold;
-    text-align: center;
 }
 
 .header-title .header-light:nth-child(3) {
-    left: 50px;
+    left: 3.6em;
     background: #82817b;
 }
 
-.header-light:nth-child(3)::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 0.3em;
-    height: 0.3em;
-    background-color: transparent;
-    border: 1.5px solid #3c3316;
-}
-
 .container {
-    background-color: rgba(255, 255, 255, 0.4);;
+    background-color: rgba(0, 0, 0, 0.6);
     max-width: 1000px;
     height: 80vh;
     overflow: auto;
@@ -95,19 +55,61 @@ body {
     border-radius: 0 0 10px 10px;
 }
 
+/*进度条*/
+.container::-webkit-scrollbar {
+    width: 8px; /* width of the scrollbar */
+}
+
+.container::-webkit-scrollbar-track {
+    background: #282d4f; /* color of the scrollbar track */
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #573b8f; /* color of the scrollbar thumb */
+    border-radius: 4px; /* roundness of the scrollbar thumb */
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background: #996cdd; /* color of the scrollbar thumb on hover */
+}
+
 .output {
     margin: 1em 1em 0 1em;
-    color: #4a4842;
+    color: #61afef;
     font-family: monospace;
     font-size: 16px;
+    font-weight: 500;
     white-space: pre-wrap;
 }
 
-.prefix {
-    color: #4a4842;
+.output-username {
+    color: #e5b456;
     font-family: monospace;
     font-size: 16px;
+    font-weight: 500;
+}
+
+.output-prefix {
+    color: #c678dd;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.username {
+    color: #e5b456;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 500;
     margin: 0 0 0 1em;
+}
+
+.prefix {
+    color: #c678dd;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 0 0;
 }
 
 .input {
@@ -118,10 +120,11 @@ body {
 
 .input input {
     background-color: transparent;
-    color: #4a4842;
+    color: #c678dd;
     border: none;
     font-family: monospace;
     font-size: 16px;
+    font-weight: 500;
 }
 
 .input input:focus {
