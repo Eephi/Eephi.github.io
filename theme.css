@@ -98,7 +98,6 @@ body {
     color: white;
     font-family: monospace;
     font-size: 16px;
-    margin: 0 0 0 1em;
 }
 
 .input {
@@ -113,6 +112,7 @@ body {
     border: none;
     font-family: monospace;
     font-size: 16px;
+    margin: 0 1em 0 0;
 }
 
 .input input:focus {
