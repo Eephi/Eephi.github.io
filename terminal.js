@@ -24,7 +24,7 @@ function execute() {
     }
 
     const p = document.createElement("p");
-    p.textContent = "> " + input + "\n" + output;
+    p.textContent = "you@eephibot:~$ " + input + "\n" + output;
     terminal.appendChild(p);
     terminal.scrollTop = terminal.scrollHeight;
     document.getElementById("command").value = "";
