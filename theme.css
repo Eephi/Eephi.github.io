@@ -1,7 +1,8 @@
 body {
-    background-color: orange;
-    color: white;
-    font-family: monospace;
+    background-image: url("https://s2.loli.net/2023/03/06/AFzrGRNZOP9EtjX.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     font-size: 16px;
 }
 
@@ -37,11 +38,15 @@ body {
 
 .header-light:nth-child(1)::before {
     content: "x";
+    font-family: monospace;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: block;
     color: #4a4842;
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: bold;
-    line-height: 0.85em;
     text-align: center;
 }
 
@@ -51,12 +56,16 @@ body {
 }
 
 .header-light:nth-child(2)::before {
-    content: "—";
+    content: "\2014";
+    font-family: monospace;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.9em;
     display: block;
     color: #4a4842;
-    font-size: 1em;
     font-weight: bold;
-    line-height: 0.9em;
     text-align: center;
 }
 
@@ -74,11 +83,11 @@ body {
     width: 0.3em;
     height: 0.3em;
     background-color: transparent;
-    border: 1.5px solid #4a4842;
+    border: 1.5px solid #3c3316;
 }
 
 .container {
-    background-color: #300a24;
+    background-color: rgba(255, 255, 255, 0.4);;
     max-width: 1000px;
     height: 80vh;
     overflow: auto;
@@ -88,32 +97,31 @@ body {
 
 .output {
     margin: 1em 1em 0 1em;
-    color: white;
+    color: #4a4842;
     font-family: monospace;
     font-size: 16px;
     white-space: pre-wrap;
 }
 
 .prefix {
-    color: white;
+    color: #4a4842;
     font-family: monospace;
     font-size: 16px;
     margin: 0 0 0 1em;
 }
 
 .input {
+    display: flex;
     font-family: monospace;
     font-size: 16px;
-    margin: 0 1em 0 0;
 }
 
 .input input {
     background-color: transparent;
-    color: white;
+    color: #4a4842;
     border: none;
     font-family: monospace;
     font-size: 16px;
-
 }
 
 .input input:focus {
