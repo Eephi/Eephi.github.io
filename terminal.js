@@ -42,11 +42,14 @@ function execute() {
             table = helpList();
             break;
         case "ls":
-            reply = "Total 3. Click on &#x60;<span class=highlight>&lt;NAME&gt</span>;&#x60; to open a folder.";
+            reply = "Total 3. Click on &lt;<span class=highlight-red>Red Text</span>&gt; to open a folder.";
             table = createTable();
             break;
         case "repo":
             reply = "Redirecting to <a href=https://github.com/Eephi/eephi.github.io target=_blank>https://github.com/Eephi/eephi.github.io</a> ..."
+            break;
+        case "tcg":
+            reply = "就算讨厌塔菲也不要讨厌一包薯条嘻嘻好吗"
             break;
         case "welcome":
             reply = "おかえりなさいませ、ご主人様！";
