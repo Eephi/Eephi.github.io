@@ -33,10 +33,6 @@ function createTable() {
     headerWrap.appendChild(headerRow)
     table.appendChild(headerWrap);
 
-    const dashLine = document.createElement("hr");
-    dashLine.setAttribute("style", "border: none; border-top: 2px dashed #61afef");
-    table.appendChild(dashLine);
-
     // create data rows
     for (let i = 1; i < data.length; i++) {
         const dataRow = document.createElement("tr");
