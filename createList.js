@@ -21,17 +21,21 @@ function createTable() {
         const headerCell = document.createElement("td");
         headerCell.textContent = data[0][i];
         if (i == 0)
-            headerCell.setAttribute("style", "padding: 0 2.7em 0 1em; border-bottom: 2px dashed;");
+            headerCell.setAttribute("style", "padding: 0 2.7em 0 1em;");
         if (i == 1)
-            headerCell.setAttribute("style", "padding: 0 1.1em 0 0.5em; border-bottom: 2px dashed;");
+            headerCell.setAttribute("style", "padding: 0 1.1em 0 0.5em");
         if (i == 2)
-            headerCell.setAttribute("style", "padding: 0 1.5em 0 0.5em; border-bottom: 2px dashed;");
+            headerCell.setAttribute("style", "padding: 0 1.5em 0 0.5em");
         headerRow.appendChild(headerCell);
     }
 
     const headerWrap = document.createElement("tr");
     headerWrap.appendChild(headerRow)
     table.appendChild(headerWrap);
+
+    const dashLine = document.createElement("hr");
+    dashLine.setAttribute("style", "border: none; border-top: 2px dashed #61afef;")
+    table.appendChild(dashLine);
 
     // create data rows
     for (let i = 1; i < data.length; i++) {
