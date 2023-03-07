@@ -34,7 +34,7 @@ function createTable() {
     table.appendChild(headerWrap);
 
     const dashLine = document.createElement("hr");
-    dashLine.setAttribute("style", "border: none; height: 2px; border-top: 2px dashed #61afef");
+    dashLine.setAttribute("style", "border: none; border-top: 2px dashed #61afef");
     table.appendChild(dashLine);
 
     // create data rows
