@@ -1,5 +1,6 @@
 body {
-    background-image: url("https://s2.loli.net/2023/03/06/AFzrGRNZOP9EtjX.jpg");
+    /*background-image: url("https://s2.loli.net/2023/03/06/AFzrGRNZOP9EtjX.jpg");*/
+    background-image: url("/images/yurucamp.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
