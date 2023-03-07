@@ -6,6 +6,14 @@ body {
     font-size: 16px;
 }
 
+a:link, a:visited {
+    color: #ff6774;
+}
+a:hover, a:active {
+    color: #89c379;
+    border: 1.5px solid rgba(137, 195, 121, 0.5);
+}
+
 /*head*/
 .header-title {
     max-width: 1000px;
@@ -49,7 +57,7 @@ body {
 .container {
     background-color: rgba(0, 0, 0, 0.6);
     max-width: 1000px;
-    height: 85vh;
+    height: 90vh;
     overflow: auto;
     margin: 0 auto 0 auto;
     border-radius: 0 0 10px 10px;
@@ -74,7 +82,7 @@ body {
 }
 
 .output {
-    margin: 1em 1em 0 1em;
+    margin: 1em 0em 0 1em;
     color: #61afef;
     font-family: monospace;
     font-size: 16px;
@@ -82,40 +90,25 @@ body {
     white-space: pre-wrap;
 }
 
-.output-username {
-    color: #e5b456;
-    font-family: monospace;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.output-prefix {
-    color: #c678dd;
-    font-family: monospace;
-    font-size: 16px;
-    font-weight: 500;
-}
-
 .username {
     color: #e5b456;
     font-family: monospace;
     font-size: 16px;
     font-weight: 500;
-    margin: 0 0 0 1em;
 }
 
-.prefix {
+.command {
     color: #c678dd;
     font-family: monospace;
     font-size: 16px;
     font-weight: 500;
-    margin: 0 0 0 0;
 }
 
 .input {
     display: flex;
     font-family: monospace;
     font-size: 16px;
+    margin: 0 0 0 1em;
 }
 
 .input input {

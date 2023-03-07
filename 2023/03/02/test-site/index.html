@@ -13,6 +13,9 @@
     
 <script src="/terminal.js"></script>
 
+    
+<script src="/createList.js"></script>
+
     <link rel="shortcut icon" href="/images/favicon.jpeg">
     
    <title>test_site - エーフィちゃんのホームページ（建設中）</title>
@@ -25,11 +28,10 @@
         <span>エーフィちゃんのホームページ（建設中）<span>
     </div>
     <div class="container" id="container">
-        <div class="output" id="output">Welcome to MsEspeon's Homepage!<br>Type &#x60;help&#x60; for more information.<br><br></div>
+        <div class="output" id="output"><span class="prefix"></span><span class="command">welcome</span><br>Welcome to MsEspeon's Homepage!<br>Type &#x60;help&#x60; for more information.<br><span class="prefix"></span><span class="command">ls</span><div id="table-container"></div>Total 3. Click on &#x60;&lt;NAME&gt;&#x60; to open a folder.</div>
         <div class="input">
-            <span class="username">you@eephibot</span>
-            <span class="prefix">:~&#36;&nbsp;</span>
-            <input type="text" id="command" autocomplete="off" onkeypress="handleKeyPress(event)">
+            <span class="prefix"></span>
+            <input type="text" id="input" autocomplete="off" onkeypress="handleKeyPress(event)">
         </div>
     </div>
 </body>
