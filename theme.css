@@ -25,6 +25,8 @@ a:hover, a:active {
     position: fixed;
     font-size: 16px;
     z-index: -1;
+    -webkit-user-select: none;
+    user-select: none
 }
 
 /*head*/
