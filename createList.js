@@ -25,7 +25,7 @@ function createTable() {
         if (i == 1)
             headerCell.setAttribute("style", "padding: 0 1.1em 0 0.5em");
         if (i == 2)
-            headerCell.setAttribute("style", "padding: 0 1.5em 0 0.5em");
+            headerCell.setAttribute("style", "padding: 0 2em 0 0.5em");
         headerRow.appendChild(headerCell);
     }
 
@@ -34,8 +34,10 @@ function createTable() {
     table.appendChild(headerWrap);
 
     const dashLine = document.createElement("hr");
-    dashLine.setAttribute("style", "border: none; border-top: 2px dashed #61afef;")
-    table.appendChild(dashLine);
+    dashLine.setAttribute("style", "border: none; height: 2px; border-top: 2px dashed #61afef");
+    const lineWrap = document.createElement("tr");
+    lineWrap.appendChild(dashLine)
+    table.appendChild(lineWrap);
 
     // create data rows
     for (let i = 1; i < data.length; i++) {
