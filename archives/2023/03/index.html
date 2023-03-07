@@ -14,7 +14,10 @@
 <script src="/terminal.js"></script>
 
     
-<script src="/createList.js"></script>
+<script src="/createTable.js"></script>
+
+    
+<script src="/helpList.js"></script>
 
     <link rel="shortcut icon" href="/images/favicon.jpeg">
     
@@ -28,7 +31,7 @@
         <span>エーフィちゃんのホームページ（建設中）<span>
     </div>
     <div class="container" id="container">
-        <div class="output" id="output"><span class="prefix"></span><span class="command">welcome</span><br>Welcome to MsEspeon's Homepage!<br>Type &#x60;help&#x60; for more information.<br><span class="prefix"></span><span class="command">ls</span><div id="table-container"></div>Total 3. Click on &#x60;&lt;NAME&gt;&#x60; to open a folder.</div>
+        <div class="output" id="output"><span class="prefix"></span><span class="command">welcome</span><br>Welcome to MsEspeon's Homepage!<br>Type &#x60;<span class="highlight">help</span>&#x60; for more information.<br><span class="prefix"></span><span class="command">ls</span><div id="table-container"></div>Total 3. Click on &#x60;<span class="highlight">&lt;NAME&gt;</span>&#x60; to open a folder.</div>
         <div class="input">
             <span class="prefix"></span>
             <input type="text" id="input" autocomplete="off" onkeypress="handleKeyPress(event)">

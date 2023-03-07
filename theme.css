@@ -105,11 +105,18 @@ a:hover, a:active {
     font-weight: 500;
 }
 
+.highlight {
+    color: #f1fa8c;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 500;
+}
+
 .input {
     display: flex;
     font-family: monospace;
     font-size: 16px;
-    margin: 0 0 0 1em;
+    margin: 0 0 1em 1em;
 }
 
 .input input {
