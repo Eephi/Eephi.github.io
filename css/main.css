@@ -392,6 +392,7 @@
     display: flex;
     margin: auto;
     padding: 20px;
+    overflow: auto;
 }
 #home-posts-wrap,
 #archives,
@@ -536,8 +537,8 @@
     position: relative;
     scrollbar-color: #8ab5ff #e6efff;
     scrollbar-width: thin;
-    word-break: keep-all;
     word-wrap: break-word;
+    word-break: keep-all;
 }
 .article {
     font-size: 15px;
@@ -980,7 +981,7 @@ ol li {
     }
     #home-head #home-info .info {
         align-items: center;
-        background: #ffffffa6;
+        background: transparent;
         display: flex;
         height: 350px;
         justify-content: center;
@@ -993,14 +994,17 @@ ol li {
     #home-head #home-info .info .wrap h1 {
         font-size: 46px;
         margin-bottom: 10px;
+        word-break: normal;
     }
     #home-head #home-info .info .wrap h3 {
         font-size: 20px;
         margin: 10px 0;
+        word-break: normal;
     }
     #home-head #home-info .info .wrap h5 {
         font-size: 14px;
         margin: 20px 0;
+        word-break: normal;
     }
     #home-head #home-info .loop {
         display: none;
