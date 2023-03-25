@@ -44,7 +44,9 @@ const app = Vue.createApp({
                 if (this.barLocal < newlocal) {
                     this.showMenu = false;
                     menu.classList.add("hidden");
-                } else menu.classList.remove("hidden");
+                } else {
+                    menu.classList.remove("hidden");
+                }
             }
             /*if (newlocal <= 400) wrap.style.marginTop = -newlocal / 5 + "px";
             else wrap.style.marginTop = "-80px";*/
