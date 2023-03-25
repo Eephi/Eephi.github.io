@@ -37,6 +37,11 @@
     <meta name="generator" content="Hexo 6.3.0"></head>
     <body>
         <div id="layout">
+            <transition name="fade">
+                <div id="loading" v-show="loading">
+                    <img src="/images/loading-alter.gif" />
+                </div>
+            </transition>
             <transition name="into">
                 <div id="main" v-show="!loading">
                     <div id="home-head">
@@ -164,17 +169,6 @@
         
         
         <span>
-            <a href="/tags/test/" style="background: #ffa2c4">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                test
-            </a>
-        </span>
-        
-        
-        
-        <span>
             <a href="/tags/hello/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
                 <span class="icon">
                     <i class="fa-solid fa-tags fa-fw"></i>
@@ -193,6 +187,17 @@
                     <i class="fa-solid fa-tags fa-fw"></i>
                 </span>
                 world
+            </a>
+        </span>
+        
+        
+        
+        <span>
+            <a href="/tags/test/" style="background: #03a9f4">
+                <span class="icon">
+                    <i class="fa-solid fa-tags fa-fw"></i>
+                </span>
+                test
             </a>
         </span>
         
@@ -216,12 +221,12 @@
                     
                     <span class="tag">
                         
-                        <a href="/tags/hello/" style="color: #03a9f4">hello</a>
+                        <a href="/tags/hello/" style="color: #ffa2c4">hello</a>
                     </span>
                     
                     <span class="tag">
                         
-                        <a href="/tags/world/" style="color: #00a596">world</a>
+                        <a href="/tags/world/" style="color: #ff7d73">world</a>
                     </span>
                     
                 </span>

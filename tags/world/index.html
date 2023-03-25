@@ -37,6 +37,11 @@
     <meta name="generator" content="Hexo 6.3.0"></head>
     <body>
         <div id="layout">
+            <transition name="fade">
+                <div id="loading" v-show="loading">
+                    <img src="/images/loading-alter.gif" />
+                </div>
+            </transition>
             <transition name="into">
                 <div id="main" v-show="!loading">
                     <div id="home-head">
@@ -164,18 +169,7 @@
         
         
         <span>
-            <a href="/tags/test/" style="background: #ffa2c4">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                test
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/tags/hello/" style="background: #ff7d73">
+            <a href="/tags/hello/" style="background: #03a9f4">
                 <span class="icon">
                     <i class="fa-solid fa-tags fa-fw"></i>
                 </span>
@@ -197,6 +191,17 @@
         
         
         
+        
+        <span>
+            <a href="/tags/test/" style="background: #03a9f4">
+                <span class="icon">
+                    <i class="fa-solid fa-tags fa-fw"></i>
+                </span>
+                test
+            </a>
+        </span>
+        
+        
     </div>
     
     <div class="timeline">
@@ -216,7 +221,7 @@
                     
                     <span class="tag">
                         
-                        <a href="/tags/hello/" style="color: #ff7d73">hello</a>
+                        <a href="/tags/hello/" style="color: #03a9f4">hello</a>
                     </span>
                     
                     <span class="tag">

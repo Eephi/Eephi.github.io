@@ -315,7 +315,7 @@
     transition: transform 0.5s ease-in-out;
 }
 #home-posts .post:hover .cover img {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
 }
 #home-posts .post .category-and-date {
     top: -6vh;
@@ -426,8 +426,8 @@
     margin: 10px;
 }
 #loading img {
-    border-radius: 0;
-    height: 50px;
+    border-radius: 20px;
+    height: 60vh;
 }
 #loading-circle {
     align-items: center;
@@ -639,7 +639,7 @@ body::-webkit-scrollbar-track {
 }
 .into-enter-active,
 .into-leave-active {
-    transition: opacity 1s;
+    transition: opacity 0.5s;
 }
 .into-enter-from,
 .into-leave-to {
@@ -1005,7 +1005,7 @@ ol li {
         display: block;
     }
     #menu.menu-color {
-        background: linear-gradient(-225deg, #e5faff 0, #ffe5fa 100%);
+        background: rgba(0, 0, 0, 0.2) !important;
     }
     ul,
     ol {

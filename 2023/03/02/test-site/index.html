@@ -41,6 +41,11 @@
     <meta name="generator" content="Hexo 6.3.0"></head>
     <body>
         <div id="layout">
+            <transition name="fade">
+                <div id="loading" v-show="loading">
+                    <img src="/images/loading-alter.gif" />
+                </div>
+            </transition>
             <transition name="into">
                 <div id="main" v-show="!loading">
                     <div id="home-head">
@@ -182,7 +187,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/test/" style="color: #00bcd4">test</a>
+                <a href="/tags/test/" style="color: #ffa2c4">test</a>
             </span>
             
         </span>
