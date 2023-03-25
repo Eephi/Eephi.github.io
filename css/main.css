@@ -1005,7 +1005,7 @@ ol li {
         display: block;
     }
     #menu.menu-color {
-        background: rgba(0, 0, 0, 0.7) !important;
+        background: linear-gradient(-225deg, #e5faff 0, #ffe5fa 100%);
     }
     ul,
     ol {
