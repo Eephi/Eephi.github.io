@@ -33,19 +33,21 @@ const app = Vue.createApp({
             for (let i of this.renderers) i();
         },
         handleScroll() {
-            let menu = this.$refs.menu,
-                wrap = this.$refs.homePostsWrap;
+            let menu = this.$refs.menu;
+            /*let wrap = this.$refs.homePostsWrap;*/
             let newlocal = document.documentElement.scrollTop;
-            if (this.barLocal < newlocal) {
-                this.showMenu = false;
-                menu.classList.add("hidden");
-            } else menu.classList.remove("hidden");
-            if (wrap) {
-                if (newlocal <= window.innerHeight - 100) menu.classList.add("menu-color");
-                else menu.classList.remove("menu-color");
-                if (newlocal <= 400) wrap.style.marginTop = -newlocal / 5 + "px";
-                else wrap.style.marginTop = "-80px";
+            if (newlocal <= window.innerHeight - 100) {
+                menu.classList.add("menu-color");
             }
+            else {
+                menu.classList.remove("menu-color");
+                if (this.barLocal < newlocal) {
+                    this.showMenu = false;
+                    menu.classList.add("hidden");
+                } else menu.classList.remove("hidden");
+            }
+            /*if (newlocal <= 400) wrap.style.marginTop = -newlocal / 5 + "px";
+            else wrap.style.marginTop = "-80px";*/
             this.barLocal = newlocal;
         },
     },
