@@ -305,7 +305,6 @@
     box-shadow: 0 16px 20px -12px rgba(0, 0, 0, 0.56), 0 4px 15px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     background-size: cover;
     overflow: hidden;
-    -webkit-transform:rotate(0deg);
 }
 #home-posts .post .cover img {
     width: 100%;
@@ -313,6 +312,7 @@
     object-fit: cover;
     display: block;
     margin-bottom: -5px;
+    border-radius: 20px;
     transition: transform 0.5s ease-in-out;
 }
 #home-posts .post:hover .cover img {
