@@ -313,9 +313,10 @@
     display: block;
     margin-bottom: -5px;
     transition: transform 0.5s ease-in-out;
+    -webkit-transform:rotate(0deg);
 }
 #home-posts .post:hover .cover img {
-    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 #home-posts .post .category-and-date {
     top: -6vh;
@@ -427,7 +428,6 @@
 }
 #loading img {
     border-radius: 20px;
-    height: 60vh;
 }
 #loading-circle {
     align-items: center;
@@ -926,6 +926,9 @@ ol li {
     .home-posts-wrap-no-card #home-posts {
         margin: auto;
     }
+    #loading img {
+        height: 60vh;
+    }
     ul,
     ol {
         padding-left: 40px;
@@ -1006,6 +1009,9 @@ ol li {
     }
     #menu.menu-color {
         background: rgba(0, 0, 0, 0.2) !important;
+    }
+    #loading img {
+        width: 80vw;
     }
     ul,
     ol {
