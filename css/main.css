@@ -1107,6 +1107,9 @@ ol li {
     #wave-container .waves {
         height: 75px;
     }
+    .divider {
+        margin: auto;
+    }
     ul,
     ol {
         padding-left: 20px;
