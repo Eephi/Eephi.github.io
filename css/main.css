@@ -950,6 +950,13 @@ ol li {
     #loading img {
         height: 60vh;
     }
+    #wave-container {
+        top: -99px;
+        height: 100px;
+    }
+    #wave-container .waves {
+        height: 100px;
+    }
     ul,
     ol {
         padding-left: 40px;
@@ -1027,6 +1034,13 @@ ol li {
     }
     #loading img {
         width: 80vw;
+    }
+    #wave-container {
+        top: -99px;
+        height: 100px;
+    }
+    #wave-container .waves {
+        height: 100px;
     }
     ul,
     ol {
