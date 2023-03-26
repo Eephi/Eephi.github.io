@@ -298,6 +298,7 @@
 #home-posts .post .cover {
     top: -10vh;
     width: 100%;
+    aspect-ratio: 16/9;
     display: block;
     margin: auto;
     background: rgba(0, 0, 0, 0.56);
