@@ -4,7 +4,7 @@
 }
 #archives {
     margin: auto;
-    margin-top: 100px;
+    margin-top: 30px;
     padding: 20px;
 }
 #archives .categories-tags {
@@ -553,11 +553,34 @@
 .article {
     font-size: 15px;
     margin: auto;
-    margin-top: 100px;
     padding: 20px;
 }
 .article .content {
     margin: 50px 0;
+}
+.article-cover {
+    width: 100%;
+    aspect-ratio: 16/9;
+    display: block;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.56);
+    border-radius: 20px;
+    box-shadow: 0 16px 20px -12px rgba(0, 0, 0, 0.56), 0 4px 15px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    overflow: hidden;
+}
+.article-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
+.title-date {
+    color: #fff;
+    display: inline-block;
+    font-size: 0.875em;
 }
 .article .info .date {
     color: #5c6b72;
@@ -794,14 +817,22 @@ h3,
 h4,
 h5,
 h6 {
-    color: #1e3e3f;
-    font-weight: bold;
-    margin: 15px 0;
+    font-family: Mulish,'Noto Serif SC','Noto Serif JP',Mulish,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 1.25rem 0 0.9375rem;
 }
-#home-head #home-info .info .wrap h1,
-#home-head #home-info .info .wrap h3,
-#home-head #home-info .info .wrap h5 {
+.home-title {
     color: #fff;
+    font-family: 'Fredericka the Great',Mulish,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+    font-size: 3.5em;
+    line-height: 1.2;
+    margin: 0.625rem 0;
+}
+#home-head #home-info .info .wrap h1 {
+    color: #fff;
+    font-size: 2.5em;
+    letter-spacing: .125rem;
 }
 
 h2 {
@@ -885,19 +916,6 @@ ol li {
     #home-head #home-info .info .wrap {
         padding: 25px;
     }
-    #home-head #home-info .info .wrap h1 {
-        font-size: 52px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    #home-head #home-info .info .wrap h3 {
-        font-size: 24px;
-        margin: 10px 0;
-    }
-    #home-head #home-info .info .wrap h5 {
-        font-size: 16px;
-        margin: 20px 0;
-    }
     #home-posts {
         margin-left: auto;
         margin-right: 50px;
@@ -963,21 +981,6 @@ ol li {
     }
     #home-head #home-info .info .wrap {
         padding: 50px;
-    }
-    #home-head #home-info .info .wrap h1 {
-        font-size: 46px;
-        margin-bottom: 10px;
-        word-break: normal;
-    }
-    #home-head #home-info .info .wrap h3 {
-        font-size: 20px;
-        margin: 10px 0;
-        word-break: normal;
-    }
-    #home-head #home-info .info .wrap h5 {
-        font-size: 14px;
-        margin: 20px 0;
-        word-break: normal;
     }
     #home-posts {
         margin: auto;

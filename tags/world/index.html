@@ -9,6 +9,7 @@
         <meta name="keywords" content="" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
         <link rel="icon" href="/images/favicon.jpeg" />
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext">
         <script src="https://cdn.staticfile.org/vue/3.2.47/vue.global.prod.min.js"></script>
 <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.3.0/css/all.min.css" />
 <link rel="stylesheet" href="/css/fonts.min.css" />
@@ -39,6 +40,19 @@
 
 <link rel="stylesheet" href="/css/main.css" />
 
+        
+        <style>
+            #home-head {
+                height: 75vh;
+            }
+            #home-head #home-background {
+                height: 75vh;
+            }
+            #home-head #home-info .info {
+                height: 67.5vh;
+            }
+        </style>
+        
     <meta name="generator" content="Hexo 6.3.0"></head>
     <body>
         <div id="layout">
@@ -49,20 +63,25 @@
             <transition name="into">
                 <div id="main" v-show="!loading">
                     <div id="home-head">
-    <div id="home-background" ref="homeBackground" data-image="/images/background/eriri.jpg,/images/background/yurucamp.jpg"></div>
-    
-    <div id="home-info" @click="homeClick">
-        <span class="info">
-            <div class="wrap">
-                <h1>エーフィちゃんのホームページ</h1>
-                <h3>（建設中）</h3>
-                <h5>小孩子不懂事，标题取着玩的</h5>
-            </div>
-        </span>
-    </div>
-    
-</div>
-<nav id="menu" ref="menu">
+                        
+                        <div id="home-background" ref="homeBackground" data-image="/images/background/eriri.jpg,/images/background/yurucamp.jpg"></div>
+                        
+                        
+                        <div id="home-info" @click="homeClick">
+                            <span class="info">
+                                <div class="wrap">
+                                    
+                                    
+                                    <h1></h1>
+                                    
+                                    
+                                    
+                                </div>
+                            </span>
+                        </div>
+                        
+                    </div>
+                    <nav id="menu" ref="menu">
     <div class="desktop-menu">
         <a class="title" href="/">
             <span>エーフィちゃんのホームページ</span>
@@ -173,18 +192,7 @@
         
         
         <span>
-            <a href="/tags/test/" style="background: #ffa2c4">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                test
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/tags/hello/" style="background: #ffa2c4">
+            <a href="/tags/hello/" style="background: #03a9f4">
                 <span class="icon">
                     <i class="fa-solid fa-tags fa-fw"></i>
                 </span>
@@ -204,6 +212,17 @@
         </span>
         
         
+        
+        
+        
+        <span>
+            <a href="/tags/test/" style="background: #03a9f4">
+                <span class="icon">
+                    <i class="fa-solid fa-tags fa-fw"></i>
+                </span>
+                test
+            </a>
+        </span>
         
         
     </div>
@@ -239,7 +258,7 @@
                     
                     <span class="tag">
                         
-                        <a href="/tags/world/" style="color: #00a596">world</a>
+                        <a href="/tags/world/" style="color: #ffa2c4">world</a>
                     </span>
                     
                 </span>
