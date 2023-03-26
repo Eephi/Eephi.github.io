@@ -911,13 +911,13 @@ ol li {
 }
 @media (min-width: 900px) {
     #home-head {
-        height: 90vh;
+        height: 100vh;
     }
     #home-head #home-background {
-        height: 90vh;
+        height: 100vh;
     }
     #home-head #home-info .info {
-        height: 81vh;
+        height: 90vh;
     }
     #home-card {
         margin-right: auto;
@@ -989,13 +989,13 @@ ol li {
 }
 @media (max-width: 900px) {
     #home-head {
-        height: 90vh;
+        height: 80vh;
     }
     #home-head #home-background {
-        height: 90vh;
+        height: 80vh;
     }
     #home-head #home-info .info {
-        height: 81vh;
+        height: 72vh;
     }
     #home-head #home-info .info {
         align-items: center;
@@ -1045,11 +1045,11 @@ ol li {
         width: 80vw;
     }
     #wave-container {
-        top: -99px;
-        height: 100px;
+        top: -79px;
+        height: 80px;
     }
     #wave-container .waves {
-        height: 100px;
+        height: 80px;
     }
     ul,
     ol {
