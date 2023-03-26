@@ -910,6 +910,15 @@ ol li {
     margin: 8px 0;
 }
 @media (min-width: 900px) {
+    #home-head {
+        height: 90vh;
+    }
+    #home-head #home-background {
+        height: 90vh;
+    }
+    #home-head #home-info .info {
+        height: 81vh;
+    }
     #home-card {
         margin-right: auto;
     }
@@ -980,13 +989,13 @@ ol li {
 }
 @media (max-width: 900px) {
     #home-head {
-        height: 80vh;
+        height: 90vh;
     }
     #home-head #home-background {
-        height: 80vh;
+        height: 90vh;
     }
     #home-head #home-info .info {
-        height: 72vh;
+        height: 81vh;
     }
     #home-head #home-info .info {
         align-items: center;
