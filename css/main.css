@@ -1045,11 +1045,11 @@ ol li {
         width: 80vw;
     }
     #wave-container {
-        top: -79px;
-        height: 80px;
+        top: -99px;
+        height: 100px;
     }
     #wave-container .waves {
-        height: 80px;
+        height: 100px;
     }
     ul,
     ol {
