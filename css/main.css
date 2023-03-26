@@ -972,6 +972,15 @@ ol li {
     }
 }
 @media (max-width: 900px) {
+    #home-head {
+        height: 80vh;
+    }
+    #home-head #home-background {
+        height: 80vh;
+    }
+    #home-head #home-info .info {
+        height: 72vh;
+    }
     #home-head #home-info .info {
         align-items: center;
         background: transparent;
