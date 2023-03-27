@@ -296,8 +296,9 @@
 
 #home-posts #posts{
     display: grid;
-    grid-template-columns: minmax(1fr, 200px);
+    grid-template-columns: 1fr;
     grid-gap: 15vh;
+    padding-bottom: 5px;
 }
 
 #home-posts .post .cover {
