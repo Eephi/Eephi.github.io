@@ -295,9 +295,7 @@
 }
 
 #home-posts #posts{
-    display: grid;
 
-    grid-gap: 15vh;
 }
 
 #home-posts .post .cover {
