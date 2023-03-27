@@ -251,7 +251,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    margin-top: 50px;
     width: 100%;
 }
 #home-posts .page-current .current {
@@ -296,7 +296,7 @@
 
 #home-posts #posts{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(1fr, 200px);
     grid-gap: 15vh;
 }
 
