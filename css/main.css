@@ -1069,6 +1069,13 @@ ol li {
         margin: auto;
         width: 100%;
     }
+    #home-posts .post .cover {
+        top: -5vh;
+    }
+    #home-posts #posts{
+        grid-gap: 10vh;
+    }
+    
     #home-posts .post {
         padding: 20px 30px;
     }
