@@ -295,7 +295,7 @@
 }
 #home-posts #posts {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     grid-gap: 15vh;
 }
 #home-posts .post .cover {
@@ -970,7 +970,6 @@ ol li {
         margin-left: auto;
         margin-right: 50px;
         width: 900px;
-        display: flex;
     }
     #home-posts .post {
         padding: 30px;
