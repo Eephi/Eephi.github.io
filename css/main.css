@@ -294,8 +294,13 @@
     transition: box-shadow 0.25s, transform 0.25s;
 }
 
-#home-posts #posts{
-
+#home-posts #posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15vh;
+}
+#home-posts #posts:last-child {
+    grid-gap: 1vh;
 }
 
 #home-posts .post .cover {
