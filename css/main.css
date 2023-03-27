@@ -1070,12 +1070,11 @@ ol li {
         width: 100%;
     }
     #home-posts .post .cover {
-        top: -5vh;
+        top: -7vh;
     }
     #home-posts #posts{
         grid-gap: 10vh;
     }
-    
     #home-posts .post {
         padding: 20px 30px;
     }
