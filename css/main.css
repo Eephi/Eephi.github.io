@@ -292,13 +292,13 @@
     border-radius: 20px;
     box-shadow: 0 0 20px #d9d9d980;
     transition: box-shadow 0.25s, transform 0.25s;
+    -webkit-transform: rotate(0deg);
 }
 
 #home-posts #posts{
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 15vh;
-    padding-bottom: 5px;
 }
 
 #home-posts .post .cover {
