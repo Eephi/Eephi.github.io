@@ -999,7 +999,8 @@ ol li {
     #archives #home-posts #posts{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 5vw;
+        row-gap: 5vh;
+        column-gap: 5vw;
     }
     #archives #home-posts .post {
         padding: 30px;
