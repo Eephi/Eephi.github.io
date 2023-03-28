@@ -1319,6 +1319,9 @@ ol li {
     .article-sort-title {
         margin-left: 20px;
     }
+    .article-sort-item-img {
+        aspect-ratio: 4/3;
+    }
     .divider {
         margin: auto;
     }
