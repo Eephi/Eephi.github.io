@@ -260,7 +260,6 @@
     border: none;
     border-radius: 20px;
     box-shadow: 0 0 20px #d9d9d980;
-    margin-top: 50px;
 }
 #home-posts .page-current,
 #timeline-posts .page-current {
@@ -1000,7 +999,8 @@ ol li {
         margin-left: auto;
         margin-right: 50px;
         width: 900px;
-        padding: 50px 40px;
+        padding: 50px 0px;
+        padding-right: 30px;
     }
     #home-posts .post {
         padding: 30px;
@@ -1074,7 +1074,7 @@ ol li {
         width: 100%;
     }
     #home-posts-wrap {
-        margin-top: 10vh;
+        margin-top: 0;
     }
     #home-posts-wrap {
         width: 800px;
@@ -1107,7 +1107,7 @@ ol li {
     #timeline-posts {
         margin: auto;
         width: 100%;
-        padding: 50px 20px;
+        padding: 50px 0;
     }
     #home-posts .post .cover {
         top: -7vh;
@@ -1124,13 +1124,8 @@ ol li {
     #home-posts .post .post-tags {
         padding-right: 69px;
     }
-    #home-content #home-posts-wrap {
-        margin-top: 10vh;
-        padding: 30px;
-    }
     #home-posts-wrap {
-        margin-top: 10vh;
-        padding: 0px;
+        padding: 30px;
     }
     #home-posts-wrap,
     .article,
@@ -1168,14 +1163,14 @@ ol li {
 }
 
 .article-sort {
-    margin-left: 10px;
+    margin-left: 40px;
     padding-left: 20px;
     border-left: 2px solid #aadafa
 }
 
 .article-sort-title {
     position: relative;
-    margin-left: 10px;
+    margin-left: 40px;
     padding-bottom: 20px;
     padding-left: 20px;
     font-size: 1.72em
