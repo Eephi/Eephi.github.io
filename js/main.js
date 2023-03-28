@@ -26,7 +26,8 @@ const app = Vue.createApp({
     },
     methods: {
         homeClick() {
-            window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
+            let background = this.$refs.homeBackground;
+            window.scrollTo({ top: background.offsetHeight, behavior: "smooth" });
         },
         render() {
             if (typeof this.renderers === "undefined") return;
@@ -34,9 +35,10 @@ const app = Vue.createApp({
         },
         handleScroll() {
             let menu = this.$refs.menu;
+            let background = this.$refs.homeBackground;
             /*let wrap = this.$refs.homePostsWrap;*/
             let newlocal = document.documentElement.scrollTop;
-            if (newlocal <= window.innerHeight - 100) {
+            if (newlocal <= background.offsetHeight - 100) {
                 menu.classList.add("menu-color");
             }
             else {

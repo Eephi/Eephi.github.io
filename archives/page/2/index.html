@@ -86,10 +86,7 @@
                             <span class="info">
                                 <div class="wrap">
                                     
-                                    
-                                    
                                     <h1>归档</h1>
-                                    
                                     
                                 </div>
                             </span>
@@ -202,305 +199,141 @@
                             </svg>
                         </div>
                         
-<div id="archives">
-    
-    <input id="search-bar" class="input" placeholder="搜索" v-model="rawSearch" />
-    
-    <div id="timeline-wrap" ref="timeline">
+<div id="home-posts-wrap"  ref="homePostsWrap">
+    <div id="timeline-posts">
+        <div class="article-sort-title">文章总览 – 共计8篇文章</div>
         
-        <div class="timeline" data-title="helloworld">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2023/3/2</div>
-                <a href="/2023/03/02/hello-world/">
-                    <h3>Hello World</h3>
+        <div class="article-sort" ref="timeline">
+            
+                
+                    <div class="article-sort-item year"> 2023/3/2 </div>
+                
+            <div class="article-sort-item" data-title="test_site">
+                <a class="article-sort-item-img" href="/2023/03/02/test-site/">
+                    <img src="/images/cover2.png"></img>
                 </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/%E4%BD%A0%E5%A5%BD/">
+                <div class="article-sort-item-info">
+                    <div class="item-time">2023/3/2</div>
+                    <a class="article-sort-item-title" href="/2023/03/02/test-site/">
+                        <h3>test_site</h3>
+                    </a>
+                    <div class="info">
+                        
+                        <span class="category">
+                            <a href="/categories/%E6%B5%8B%E8%AF%95/">
+                                <span class="icon">
+                                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                                </span>
+                                测试
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="tags">
                             <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                                <i class="fa-solid fa-tags fa-fw"></i>
                             </span>
-                            你好
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        <span class="tag">
                             
-                            <a href="/tags/hello/" style="color: #00bcd4">hello</a>
-                        </span>
-                        
-                        <span class="tag">
+                            <span class="tag">
+                                
+                                <a href="/tags/test/" style="color: #00a596">test</a>
+                            </span>
                             
-                            <a href="/tags/world/" style="color: #ff7d73">world</a>
                         </span>
                         
-                    </span>
-                    
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="timeline" data-title="test_site">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2023/3/2</div>
-                <a href="/2023/03/02/test-site/">
-                    <h3>test_site</h3>
+            
+                
+            <div class="article-sort-item" data-title="helloworld">
+                <a class="article-sort-item-img" href="/2023/03/02/hello-world/">
+                    <img src="/images/cat.jpg"></img>
                 </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/%E6%B5%8B%E8%AF%95/">
+                <div class="article-sort-item-info">
+                    <div class="item-time">2023/3/2</div>
+                    <a class="article-sort-item-title" href="/2023/03/02/hello-world/">
+                        <h3>Hello World</h3>
+                    </a>
+                    <div class="info">
+                        
+                        <span class="category">
+                            <a href="/categories/%E4%BD%A0%E5%A5%BD/">
+                                <span class="icon">
+                                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                                </span>
+                                你好
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="tags">
                             <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                                <i class="fa-solid fa-tags fa-fw"></i>
                             </span>
-                            测试
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        <span class="tag">
                             
-                            <a href="/tags/test/" style="color: #00a596">test</a>
+                            <span class="tag">
+                                
+                                <a href="/tags/hello/" style="color: #ffa2c4">hello</a>
+                            </span>
+                            
+                            <span class="tag">
+                                
+                                <a href="/tags/world/" style="color: #00bcd4">world</a>
+                            </span>
+                            
                         </span>
                         
-                    </span>
-                    
+                    </div>
                 </div>
             </div>
+            
         </div>
+        <div class="page-current">
+    <div class="prev">
         
-        <div class="timeline" data-title="hello">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2023/3/26</div>
-                <a href="/2023/03/26/hello/">
-                    <h3>Hello</h3>
-                </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/%E4%BD%A0%E5%A5%BD/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            你好
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/hello/" style="color: #00a596">hello</a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
+        <a class="page-num" href="/archives/">
+            <i class="fa-solid fa-caret-left fa-fw"></i>
+        </a>
         
-        <div class="timeline" data-title="world">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2023/3/26</div>
-                <a href="/2023/03/26/world/">
-                    <h3>World</h3>
-                </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/%E4%BD%A0%E5%A5%BD/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            你好
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/hello/" style="color: #03a9f4">hello</a>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/world/" style="color: #00a596">world</a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
+    </div>
+    <div class="page-index">
         
-        <div class="timeline" data-title="1">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2023/3/26</div>
-                <a href="/2023/03/26/1/">
-                    <h3>1</h3>
-                </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/%E4%BD%A0%E5%A5%BD/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            你好
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/hello/" style="color: #03a9f4">hello</a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
+        <span>
+            
+            
+            <a class="page-num" href="/archives/">1</a>
+        </span>
         
-        <div class="timeline" data-title="2">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2023/3/26</div>
-                <a href="/2023/03/26/2/">
-                    <h3>2</h3>
-                </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/%E4%BD%A0%E5%A5%BD/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            你好
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/hello/" style="color: #ffa2c4">hello</a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
+        <span class="current">2</span>
         
-        <div class="timeline" data-title="3">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2023/3/26</div>
-                <a href="/2023/03/26/3/">
-                    <h3>3</h3>
-                </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/%E4%BD%A0%E5%A5%BD/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            你好
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/hello/" style="color: #00bcd4">hello</a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="4">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2023/3/26</div>
-                <a href="/2023/03/26/4/">
-                    <h3>4</h3>
-                </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/%E4%BD%A0%E5%A5%BD/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            你好
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/hello/" style="color: #03a9f4">hello</a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
+    </div>
+    <div class="next">
         
     </div>
 </div>
 
+    </div>
+    
+    <div id="home-card">
+        <div id="card-div">
+    <div class="card-style" style="width: 300px">
+        <div class="avatar">
+            <img src="/images/favicon.jpeg" alt="avatar" />
+        </div>
+        <div class="name">MsEspeon</div>
+        <div class="description">
+            <p>Description<br>…</p>
+
+        </div>
+        
+        
+    </div>
+</div>
+
+    </div>
+    
+</div>
                     </div>
                     <footer id="footer">
     <div id="footer-wrap">
