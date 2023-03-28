@@ -1153,6 +1153,13 @@ ol li {
     #wave-container .waves {
         height: 75px;
     }
+    .article-sort {
+        margin-left: 20px;
+    }
+    
+    .article-sort-title {
+        margin-left: 20px;
+    }
     .divider {
         margin: auto;
     }
