@@ -976,13 +976,13 @@ ol li {
     margin: 8px 0;
 }
 .article-sort {
-    margin-left: 40px;
+    margin-left: 50px;
     padding-left: 20px;
     border-left: 2px solid #aadafa
 }
 .article-sort-title {
     position: relative;
-    margin-left: 40px;
+    margin-left: 50px;
     padding-bottom: 20px;
     padding-left: 20px;
     font-size: 1.72em
@@ -1183,7 +1183,7 @@ ol li {
     }
     #archives #home-posts #posts{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         row-gap: 10vh;
         column-gap: 5vw;
     }
@@ -1215,6 +1215,12 @@ ol li {
     }
     #wave-container .waves {
         height: 100px;
+    }
+    .article-sort-title {
+        padding-left: 40px;
+    }
+    .article-sort-item {
+        padding-left: 10px;
     }
     ul,
     ol {
@@ -1314,10 +1320,11 @@ ol li {
         height: 75px;
     }
     .article-sort {
-        margin-left: 20px;
+        margin-left: 6vw;
     }
     .article-sort-title {
-        margin-left: 20px;
+        padding-left: 30px;
+        margin-left: 6vw;
     }
     .article-sort-item-img {
         margin-right: 0;
