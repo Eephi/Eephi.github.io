@@ -45,6 +45,7 @@
 .article-sort-item-info .info .category,
 .article-sort-item-info .info .tags,
 .article-sort-item-info .info .tags .tag {
+    display: inline-block;
     margin-right: 10px;
 }
 #archives h3,
