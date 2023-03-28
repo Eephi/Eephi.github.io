@@ -1124,6 +1124,10 @@ ol li {
     #home-posts .post .post-tags {
         padding-right: 69px;
     }
+    #home-content #home-posts-wrap {
+        margin-top: 10vh;
+        padding: 30px;
+    }
     #home-posts-wrap {
         margin-top: 10vh;
         padding: 0px;
