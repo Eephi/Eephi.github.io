@@ -258,7 +258,7 @@
 #timeline-posts {
     background: #fff;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 0 20px #d9d9d980;
     margin-top: 50px;
 }
@@ -1107,7 +1107,7 @@ ol li {
     #timeline-posts {
         margin: auto;
         width: 100%;
-        padding: 50px 10px;
+        padding: 50px 20px;
     }
     #home-posts .post .cover {
         top: -7vh;
@@ -1126,7 +1126,7 @@ ol li {
     }
     #home-posts-wrap {
         margin-top: 10vh;
-        padding: 20px;
+        padding: 0px;
     }
     #home-posts-wrap,
     .article,
