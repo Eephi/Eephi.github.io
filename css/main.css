@@ -1333,6 +1333,7 @@ ol li {
     }
     .divider {
         margin: auto;
+        padding-bottom: 3rem;
     }
     ul,
     ol {
