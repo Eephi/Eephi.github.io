@@ -1327,9 +1327,7 @@ ol li {
         margin-left: 6vw;
     }
     .article-sort-item-img {
-        margin-right: 0;
-        width: 40%;
-        aspect-ratio: 16/9;
+        aspect-ratio: 4/3;
     }
     .divider {
         margin: auto;
@@ -1342,6 +1340,7 @@ ol li {
 }
 @media (max-width: 600px) {
     .article-sort-item-img {
-        aspect-ratio: 4/3;
+        margin-right: 0;
+        width: 40%;
     }
 }
