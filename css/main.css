@@ -260,7 +260,6 @@
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 20px #d9d9d980;
-    padding: 50px 40px;
     margin-top: 50px;
 }
 #home-posts .page-current,
@@ -1001,6 +1000,7 @@ ol li {
         margin-left: auto;
         margin-right: 50px;
         width: 900px;
+        padding: 50px 40px;
     }
     #home-posts .post {
         padding: 30px;
@@ -1107,6 +1107,7 @@ ol li {
     #timeline-posts {
         margin: auto;
         width: 100%;
+        padding: 50px 20px;
     }
     #home-posts .post .cover {
         top: -7vh;
