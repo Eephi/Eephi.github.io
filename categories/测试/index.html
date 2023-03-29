@@ -46,7 +46,8 @@
                 margin-top: 0;
             }
         </style>
-          
+        
+           
         
         <style>
             @media (min-width: 900px) {
@@ -209,24 +210,23 @@
 
 
 
-<div class="divider"><h2>こんにちは！</h2><h2>管理人のエーフィです！</h2></div>
 <div id="home-posts-wrap"  ref="homePostsWrap">
     <div id="timeline-posts">
         <div class="article-sort-title">
-            <a href="/categories">全部分类</a>
+            <a href="/categories" class="sub-cat-link">全部分类</a>
             <span class="small">/测试/</span>
         </div>
         <div class="article-sort" ref="timeline">
         
     
     
-    
-
-
 
     
-            <span class="article-sort-item year" >
-                <a href="/categories/%E6%B5%8B%E8%AF%95/%E4%BD%A0%E5%A5%BD/">你好</a>
+
+
+    
+            <span class="article-sort-item year" style="font-size: 1.6em">
+                <a href="/categories/%E6%B5%8B%E8%AF%95/%E4%BD%A0%E5%A5%BD/" class="main-cat-link">你好</a>
                 <span class="small">(1)</span>
             </span>
         
@@ -235,18 +235,72 @@
                 <img src="/images/cat.jpg"></img>
             </a>
             <div class="article-sort-item-info">
-                <div class="item-time">2023/3/26</div>
+                <div class="date" style="color:#5c6b72;">
+                    <span class="icon">
+                        <i class="fa-solid fa-calendar fa-fw"></i>
+                    </span>
+                    2023/3/26
+                </div>
                 <a class="article-sort-item-title" href="/2023/03/26/3/">
-                    <h3>3</h3>
+                    <h3 class="sub-cat-link" style="margin-top: 5px;">3</h3>
                 </a>
             <div class="info">
                 
                     <span class="category">
-                        <a href="/categories/%E6%B5%8B%E8%AF%95/%E4%BD%A0%E5%A5%BD/">
+                        <a href="/categories/%E6%B5%8B%E8%AF%95/%E4%BD%A0%E5%A5%BD/" style="color:#5c6b72">
                             <span class="icon">
                                 <i class="fa-solid fa-bookmark fa-fw"></i>
                             </span>
                             你好
+                        </a>
+                    </span>
+                
+                
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/hello/" style="color: #ffa2c4">hello</a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+    
+    
+
+            <span class="article-sort-item year" style="font-size: 1.6em">
+                <a href="/categories/%E6%B5%8B%E8%AF%95/%E6%AD%A3%E4%B9%89/" class="main-cat-link">正义</a>
+                <span class="small">(2)</span>
+            </span>
+        
+        <div class="article-sort-item" data-title="4">
+            <a class="article-sort-item-img" href="/2023/03/26/4/">
+                <img src="/images/cat.jpg"></img>
+            </a>
+            <div class="article-sort-item-info">
+                <div class="date" style="color:#5c6b72;">
+                    <span class="icon">
+                        <i class="fa-solid fa-calendar fa-fw"></i>
+                    </span>
+                    2023/3/26
+                </div>
+                <a class="article-sort-item-title" href="/2023/03/26/4/">
+                    <h3 class="sub-cat-link" style="margin-top: 5px;">4</h3>
+                </a>
+            <div class="info">
+                
+                    <span class="category">
+                        <a href="/categories/%E6%B5%8B%E8%AF%95/%E6%AD%A3%E4%B9%89/" style="color:#5c6b72">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            正义
                         </a>
                     </span>
                 
@@ -267,63 +321,24 @@
             </div>
         </div>
     
-    
-
-            <span class="article-sort-item year" >
-                <a href="/categories/%E6%B5%8B%E8%AF%95/%E6%AD%A3%E4%B9%89/">正义</a>
-                <span class="small">(2)</span>
-            </span>
-        
-        <div class="article-sort-item" data-title="4">
-            <a class="article-sort-item-img" href="/2023/03/26/4/">
-                <img src="/images/cat.jpg"></img>
-            </a>
-            <div class="article-sort-item-info">
-                <div class="item-time">2023/3/26</div>
-                <a class="article-sort-item-title" href="/2023/03/26/4/">
-                    <h3>4</h3>
-                </a>
-            <div class="info">
-                
-                    <span class="category">
-                        <a href="/categories/%E6%B5%8B%E8%AF%95/%E6%AD%A3%E4%B9%89/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            正义
-                        </a>
-                    </span>
-                
-                
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/hello/" style="color: #00bcd4">hello</a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
-    
-        <div class="article-sort-item" data-title="test_site">
+        <div class="article-sort-item" data-title="hexo主题shoka&multi-markdown-it渲染器使用说明">
             <a class="article-sort-item-img" href="/2023/03/02/test-site/">
                 <img src="/images/cover2.png"></img>
             </a>
             <div class="article-sort-item-info">
-                <div class="item-time">2023/3/2</div>
+                <div class="date" style="color:#5c6b72;">
+                    <span class="icon">
+                        <i class="fa-solid fa-calendar fa-fw"></i>
+                    </span>
+                    2023/3/2
+                </div>
                 <a class="article-sort-item-title" href="/2023/03/02/test-site/">
-                    <h3>test_site</h3>
+                    <h3 class="sub-cat-link" style="margin-top: 5px;">Hexo 主题 Shoka &amp; multi-markdown-it 渲染器使用说明</h3>
                 </a>
             <div class="info">
                 
                     <span class="category">
-                        <a href="/categories/%E6%B5%8B%E8%AF%95/%E6%AD%A3%E4%B9%89/">
+                        <a href="/categories/%E6%B5%8B%E8%AF%95/%E6%AD%A3%E4%B9%89/" style="color:#5c6b72">
                             <span class="icon">
                                 <i class="fa-solid fa-bookmark fa-fw"></i>
                             </span>
@@ -339,7 +354,7 @@
                         
                         <span class="tag">
                             
-                            <a href="/tags/test/" style="color: #03a9f4">test</a>
+                            <a href="/tags/test/" style="color: #ffa2c4">test</a>
                         </span>
                         
                     </span>
