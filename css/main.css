@@ -1344,3 +1344,9 @@ ol li {
         width: 40%;
     }
 }
+
+.small {
+    color: rgba(255, 114, 139, 0.6);
+    margin: auto 0.3125rem;
+    font-size: 80%;
+}
