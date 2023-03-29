@@ -671,7 +671,7 @@ body::-webkit-scrollbar-track {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: rgba(255, 114, 139, 0.8);
+    color: hsla(349, 100%, 72%, 0.8);
     display: table;
     white-space: nowrap;
     height: auto;
@@ -679,7 +679,6 @@ body::-webkit-scrollbar-track {
     text-align: center  ;  
     margin: 0 5rem;
     padding-top: 3rem;
-    padding-bottom: 1rem;
 }
 #home-content #archives .divider {
     margin: 1rem 0;
@@ -882,9 +881,6 @@ code {
     line-height: 2.5;
     padding: 4px 8px;
 }
-h1 {
-    font-size: 30px;
-}
 h1,
 h2,
 h3,
@@ -908,7 +904,9 @@ h6 {
     font-size: 2.5em;
     letter-spacing: .125rem;
 }
-
+h1 {
+    font-size: 30px;
+}
 h2 {
     font-size: 27px;
 }
@@ -1160,6 +1158,8 @@ ol li {
         padding: 0;
     }
     #home-posts {
+        margin-left: 75px;
+        margin-right: 75px;
         width: 700px;
     }
     #timeline-posts {
@@ -1252,6 +1252,9 @@ ol li {
     #home-posts-wrap {
         width: 800px;
     }
+    .divider {
+        padding-bottom: 3rem;
+    }
 }
 @media (max-width: 900px) {
     #home-head {
@@ -1333,9 +1336,6 @@ ol li {
         padding-left: 30px;
         margin-left: 6vw;
     }
-    .article-sort-item-img {
-        aspect-ratio: 4/3;
-    }
     .divider {
         margin: auto;
         padding-bottom: 3rem;
@@ -1346,9 +1346,22 @@ ol li {
     }
 }
 @media (max-width: 600px) {
+    .article-sort-item:before {
+        top: 25%;
+    }
+    .article-sort-item {
+        flex-direction: column;
+    }
     .article-sort-item-img {
-        margin-right: 0;
-        width: 40%;
+        margin-right: 30px;
+        width: 90%;
+    }
+    .article-sort-item-info {
+        width: 90%;
+        padding-left: 3%;
+    }
+    .article-sort-item.year {
+        flex-direction: row;
     }
 }
 
