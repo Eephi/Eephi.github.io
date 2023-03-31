@@ -35,7 +35,6 @@ const app = Vue.createApp({
         },
         searchClick(){
             document.body.style.overflowY = "hidden";
-            document.body.style.webkitOverflowScrolling = "touch";
             this.showSearch = true;
             if (!this.searchData) {
                 this.searchFunc(window.searchPath);
@@ -44,7 +43,6 @@ const app = Vue.createApp({
         },
         closeClick() {
             document.body.style.overflowY = "auto";
-            document.body.style.webkitOverflowScrolling = "auto";
             this.showSearch = false;
         },
         searchFunc(path) {
