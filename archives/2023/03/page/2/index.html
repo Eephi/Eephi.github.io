@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <title>Archives | エーフィのホームページ</title>
         <meta name="author" content="MsEspeon" />
-        <meta name="description" content="MsEspeon" />
+        <meta name="description" content="MsEspeon's homepage" />
         <meta name="keywords" content="" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
         <link rel="icon" href="/images/favicon.jpeg" />
@@ -39,8 +39,6 @@
 <script src="/js/lib/preview.js"></script>
 
 
-
-<script src="/js/lib/search.js"></script>
 
 
 
@@ -138,10 +136,12 @@
             <span>&ensp;Tags</span>
         </a>
         
+        
         <a @click="searchClick" style="cursor: pointer;">
             <i class="fa-solid fa-search fa-fw"></i>
             <span>&ensp;Search</span>
         </a>
+        
     </div>
     <div id="mobile-menu">
         <div class="curtain" v-show="showMenu" @click="showMenu = !showMenu"></div>
@@ -197,6 +197,7 @@
                 </div>
             </a>
             
+            
             <a @click="searchClick" style="cursor: pointer;">
                 <div class="item">
                     <div style="min-width: 20px; max-width: 50px; width: 10%">
@@ -205,10 +206,12 @@
                     <div style="min-width: 100px; max-width: 150%; width: 20%">Search</div>
                 </div>
             </a>
+            
         </div>
         </transition>
     </div>
 </nav>
+
 <transition name="searchfade">
 <div id="local-search" v-show="showSearch">
     <div class="search-dialog">
@@ -233,6 +236,7 @@
     </div>
 </div>
 </transition>
+
                     <div id="home-content">
                         <div id="wave-container">
                             <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -255,30 +259,32 @@
         <div class="article-sort" ref="timeline">
             
                 
-                    <div class="article-sort-item year">2023/3/2</div>
+                    
+                        <div class="article-sort-item year">2023/3/26</div>
+                    
                 
-            <div class="article-sort-item" data-title="hexo主题shoka&multi-markdown-it渲染器使用说明">
-                <a class="article-sort-item-img" href="/2023/03/02/test-site/">
-                    <img src="/images/cover2.png"></img>
+            <div class="article-sort-item" data-title="world">
+                <a class="article-sort-item-img" href="/2023/03/26/world/">
+                    <img src="/images/cat.jpg"></img>
                 </a>
                 <div class="article-sort-item-info">
                     <div class="date" style="color:#5c6b72;">
                         <span class="icon">
                             <i class="fa-solid fa-calendar fa-fw"></i>
                         </span>
-                        2023/3/2
+                        2023/3/26
                     </div>
-                    <a class="article-sort-item-title" href="/2023/03/02/test-site/">
-                        <h3 class="sub-cat-link" style="margin-top: 7px;">Hexo 主题 Shoka &amp; multi-markdown-it 渲染器使用说明</h3>
+                    <a class="article-sort-item-title" href="/2023/03/26/world/">
+                        <h3 class="sub-cat-link" style="margin-top: 7px;">World</h3>
                     </a>
                     <div class="info">
                         
                         <span class="category">
-                            <a href="/categories/%E6%B5%8B%E8%AF%95/%E6%AD%A3%E4%B9%89/" style="color:#5c6b72">
+                            <a href="/categories/%E4%BD%A0%E5%A5%BD/" style="color:#5c6b72">
                                 <span class="icon">
                                     <i class="fa-solid fa-bookmark fa-fw"></i>
                                 </span>
-                                正义
+                                你好
                             </a>
                         </span>
                         
@@ -290,7 +296,12 @@
                             
                             <span class="tag">
                                 
-                                <a href="/tags/test/" style="color: #ffa2c4">test</a>
+                                <a href="/tags/hello/" style="color: #00bcd4">hello</a>
+                            </span>
+                            
+                            <span class="tag">
+                                
+                                <a href="/tags/world/" style="color: #00a596">world</a>
                             </span>
                             
                         </span>
@@ -300,8 +311,10 @@
             </div>
             
                 
-            <div class="article-sort-item" data-title="helloworld">
-                <a class="article-sort-item-img" href="/2023/03/02/hello-world/">
+                    
+                
+            <div class="article-sort-item" data-title="hello">
+                <a class="article-sort-item-img" href="/2023/03/26/hello/">
                     <img src="/images/cat.jpg"></img>
                 </a>
                 <div class="article-sort-item-info">
@@ -309,19 +322,19 @@
                         <span class="icon">
                             <i class="fa-solid fa-calendar fa-fw"></i>
                         </span>
-                        2023/3/2
+                        2023/3/26
                     </div>
-                    <a class="article-sort-item-title" href="/2023/03/02/hello-world/">
-                        <h3 class="sub-cat-link" style="margin-top: 7px;">Hello World</h3>
+                    <a class="article-sort-item-title" href="/2023/03/26/hello/">
+                        <h3 class="sub-cat-link" style="margin-top: 7px;">Hello</h3>
                     </a>
                     <div class="info">
                         
                         <span class="category">
-                            <a href="/categories/%E4%BD%A0%E5%A5%BD/%E4%B8%96%E7%95%8C/" style="color:#5c6b72">
+                            <a href="/categories/%E6%B5%8B%E8%AF%95/%E9%9A%90%E8%80%85/" style="color:#5c6b72">
                                 <span class="icon">
                                     <i class="fa-solid fa-bookmark fa-fw"></i>
                                 </span>
-                                世界
+                                隐者
                             </a>
                         </span>
                         
@@ -333,12 +346,7 @@
                             
                             <span class="tag">
                                 
-                                <a href="/tags/hello/" style="color: #03a9f4">hello</a>
-                            </span>
-                            
-                            <span class="tag">
-                                
-                                <a href="/tags/world/" style="color: #03a9f4">world</a>
+                                <a href="/tags/hello/" style="color: #ffa2c4">hello</a>
                             </span>
                             
                         </span>
@@ -375,7 +383,9 @@
     </div>
     
     <div id="home-card">
-        <div id="card-div">
+        
+
+<div id="card-div">
     <div class="card-style" style="width: 300px">
         <div class="avatar">
             <img src="/images/favicon.jpeg" alt="avatar" />
@@ -416,6 +426,91 @@
         
         
     </div>
+    
+    <div class="card-style" style="width: 300px; margin-top: 50px;">
+        <div class="name" style="margin: 10px 35px; margin-top:0; text-align: left;">Category</div>
+        <hr style="margin: 0 30px; border-top: 1.3px solid">
+        <div class="category-list">
+        <ul>
+    <li>
+    
+        <a href="/categories/%E4%BD%A0%E5%A5%BD/" style="font-size:1.2em; color: #1e3e3f;">你好</a>
+    
+    
+        <ul>
+            
+    <li>
+    
+        <a href="/categories/%E4%BD%A0%E5%A5%BD/%E4%B8%96%E7%95%8C/" style="color: #1e3e3f;">世界</a>
+    
+    
+    </li>
+    
+
+    <li>
+    
+        <a href="/categories/%E4%BD%A0%E5%A5%BD/%E6%84%9A%E8%80%85/" style="color: #1e3e3f;">愚者</a>
+    
+    
+    </li>
+    
+
+        </ul>
+    
+    </li>
+    
+
+    <li>
+    
+        <a href="/categories/%E6%B5%8B%E8%AF%95/" style="font-size:1.2em; color: #1e3e3f;">测试</a>
+    
+    
+        <ul>
+            
+    <li>
+    
+        <a href="/categories/%E6%B5%8B%E8%AF%95/%E4%BD%A0%E5%A5%BD/" style="color: #1e3e3f;">你好</a>
+    
+    
+    </li>
+    
+
+    <li>
+    
+        <a href="/categories/%E6%B5%8B%E8%AF%95/%E6%AD%A3%E4%B9%89/" style="color: #1e3e3f;">正义</a>
+    
+    
+        <ul>
+            
+    <li>
+    
+        <a href="/categories/%E6%B5%8B%E8%AF%95/%E6%AD%A3%E4%B9%89/%E9%9A%90%E8%80%85/" style="color: #1e3e3f;">隐者</a>
+    
+    
+    </li>
+    
+
+        </ul>
+    
+    </li>
+    
+
+    <li>
+    
+        <a href="/categories/%E6%B5%8B%E8%AF%95/%E9%9A%90%E8%80%85/" style="color: #1e3e3f;">隐者</a>
+    
+    
+    </li>
+    
+
+        </ul>
+    
+    </li>
+    
+</ul>
+        </div>
+    </div>
+    
 </div>
 
     </div>
@@ -426,7 +521,7 @@
     <div id="footer-wrap">
         <div>
             &copy;
-            2022 - 2023 エーフィ
+            2022 - 2023 エーフィのホームページ
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>

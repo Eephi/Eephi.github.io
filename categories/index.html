@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <title>Categories | エーフィのホームページ</title>
         <meta name="author" content="MsEspeon" />
-        <meta name="description" content="MsEspeon" />
+        <meta name="description" content="MsEspeon's homepage" />
         <meta name="keywords" content="" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
         <link rel="icon" href="/images/favicon.jpeg" />
@@ -138,10 +138,12 @@
             <span>&ensp;Tags</span>
         </a>
         
+        
         <a @click="searchClick" style="cursor: pointer;">
             <i class="fa-solid fa-search fa-fw"></i>
             <span>&ensp;Search</span>
         </a>
+        
     </div>
     <div id="mobile-menu">
         <div class="curtain" v-show="showMenu" @click="showMenu = !showMenu"></div>
@@ -197,6 +199,7 @@
                 </div>
             </a>
             
+            
             <a @click="searchClick" style="cursor: pointer;">
                 <div class="item">
                     <div style="min-width: 20px; max-width: 50px; width: 10%">
@@ -205,10 +208,12 @@
                     <div style="min-width: 100px; max-width: 150%; width: 20%">Search</div>
                 </div>
             </a>
+            
         </div>
         </transition>
     </div>
 </nav>
+
 <transition name="searchfade">
 <div id="local-search" v-show="showSearch">
     <div class="search-dialog">
@@ -233,6 +238,7 @@
     </div>
 </div>
 </transition>
+
                     <div id="home-content">
                         <div id="wave-container">
                             <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -260,7 +266,7 @@
         
             <span class="article-sort-item year" style="font-size: 1.6em">
                 <a href="/categories/%E4%BD%A0%E5%A5%BD/" class="main-cat-link">你好</a>
-                <span class="small">(5)</span>
+                <span class="small">(4)</span>
             </span>
         
     
@@ -281,7 +287,7 @@
 
             <span class="article-sort-item year" style="font-size: 1.6em">
                 <a href="/categories/%E6%B5%8B%E8%AF%95/" class="main-cat-link">测试</a>
-                <span class="small">(3)</span>
+                <span class="small">(4)</span>
             </span>
         
     
@@ -298,13 +304,29 @@
             </span>
         
     
+            <span class="article-sort-item" style="font-size: 1.3em; flex-direction: row;">
+                <a href="/categories/%E6%B5%8B%E8%AF%95/%E6%AD%A3%E4%B9%89/%E9%9A%90%E8%80%85/" class="sub-cat-link">隐者</a>
+                <span class="small">(1)</span>
+            </span>
+        
+    
+
+
+            <span class="article-sort-item" style="font-size: 1.3em; flex-direction: row;">
+                <a href="/categories/%E6%B5%8B%E8%AF%95/%E9%9A%90%E8%80%85/" class="sub-cat-link">隐者</a>
+                <span class="small">(1)</span>
+            </span>
+        
+    
 
 
         </div>
     </div>
     
     <div id="home-card">
-        <div id="card-div">
+        
+
+<div id="card-div">
     <div class="card-style" style="width: 300px">
         <div class="avatar">
             <img src="/images/favicon.jpeg" alt="avatar" />
@@ -345,6 +367,7 @@
         
         
     </div>
+    
 </div>
 
     </div>
@@ -356,7 +379,7 @@
     <div id="footer-wrap">
         <div>
             &copy;
-            2022 - 2023 エーフィ
+            2022 - 2023 エーフィのホームページ
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
