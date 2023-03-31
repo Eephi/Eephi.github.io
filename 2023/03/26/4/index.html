@@ -10,6 +10,15 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
         <link rel="icon" href="/images/favicon.jpeg" />
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext">
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+        <script>      
+            let searchPath = "search.xml";
+            if (searchPath.length == 0) {
+                searchPath = "search.xml";
+            }
+            window.searchPath = "/" + searchPath;
+        </script>
         <script src="https://cdn.staticfile.org/vue/3.2.47/vue.global.prod.min.js"></script>
 <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.3.0/css/all.min.css" />
 <link rel="stylesheet" href="/css/fonts.min.css" />
@@ -112,11 +121,11 @@
                                         
                                         <span class="item">    
                                             <span class="category">
-                                                <a href="/categories/%E6%B5%8B%E8%AF%95/" style="color: #fff">
+                                                <a href="/categories/%E6%B5%8B%E8%AF%95/%E6%AD%A3%E4%B9%89/" style="color: #fff">
                                                     <span class="icon">
                                                         <i class="fa-solid fa-bookmark fa-fw" style="color: #fff"></i>
                                                     </span>
-                                                    测试
+                                                    正义
                                                 </a>
                                             </span>
                                         </span>
@@ -159,6 +168,10 @@
             <span>&ensp;Tags</span>
         </a>
         
+        <a @click="searchClick" style="cursor: pointer;">
+            <i class="fa-solid fa-search fa-fw"></i>
+            <span>&ensp;Search</span>
+        </a>
     </div>
     <div id="mobile-menu">
         <div class="curtain" v-show="showMenu" @click="showMenu = !showMenu"></div>
@@ -214,11 +227,42 @@
                 </div>
             </a>
             
+            <a @click="searchClick" style="cursor: pointer;">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-search fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Search</div>
+                </div>
+            </a>
         </div>
         </transition>
     </div>
 </nav>
-
+<transition name="searchfade">
+<div id="local-search" v-show="showSearch">
+    <div class="search-dialog">
+        <nav class="search-nav">
+            <span class="search-dialog-title">搜索</span>
+        </nav>
+        <div class ="search-wrap" style="display: block;">
+            <div id="local-search-input">
+                <div class="local-search-box">
+                    <input class="local-search-box-input" placeholder="搜索文章" type="text" v-model="searchQuery" @input="handleSearch">
+                </div>
+                <button class="search-find-button">
+                    <i class="fa-solid fa-search fa-fw"></i>
+                </button>
+                <button class="search-close-button" @click="closeClick()">
+                    <i class="fa-solid fa-times fa-fw"></i>
+                </button>
+            </div>
+            <div id="local-search-result" ref="searchResult">
+            </div>
+        </div>
+    </div>
+</div>
+</transition>
                     <div id="home-content">
                         <div id="wave-container">
                             <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -233,7 +277,42 @@
                                 </g>
                             </svg>
                         </div>
-                        <div class="article">
+                        
+<div class="article-cat">    
+    <span>
+        <a href="/" style="color: #5c6b72;">
+            <span class="icon">
+                <i class="fa-solid fa-house fa-fw"></i>
+            </span>
+            Home
+        </a>
+    </span>
+    <i class="fa fa-angle-right" style="color: #5c6b72;; margin: 0 5px; font-size: 0.8em;" aria-hidden="true"></i>
+    
+    
+        
+        
+        <span>
+            <a href="/categories/测试" style="color: #ff728b;"> 
+                测试
+            </a>
+        </span>
+        <i class="fa fa-angle-right" style="color: rgba(255, 114, 139, 0.8); margin: 0 5px; font-size: 0.8em;" aria-hidden="true"></i>
+        
+    
+        
+        
+        <span>
+            <a href="/categories/测试/正义" style="color: #ff728b;"> 
+                正义
+            </a>
+            <i class="fa fa-angle-right" style="color: rgba(255, 114, 139, 0.8); margin: 0 5px; font-size: 0.8em;" aria-hidden="true"></i>
+        </span>
+        
+    
+    
+</div>
+<div class="article">
     <div>
         <h1>4</h1>
     </div>
@@ -246,11 +325,11 @@
         </span>
         
         <span class="category">
-            <a href="/categories/%E6%B5%8B%E8%AF%95/">
+            <a href="/categories/%E6%B5%8B%E8%AF%95/%E6%AD%A3%E4%B9%89/">
                 <span class="icon">
                     <i class="fa-solid fa-bookmark fa-fw"></i>
                 </span>
-                测试
+                正义
             </a>
         </span>
         
@@ -262,7 +341,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/hello/" style="color: #03a9f4">hello</a>
+                <a href="/tags/hello/" style="color: #00bcd4">hello</a>
             </span>
             
         </span>
