@@ -1562,7 +1562,7 @@ ol li {
         top: 30%;
     }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 600px) {
     .search-dialog {
         top: 0;
         left: 0;
