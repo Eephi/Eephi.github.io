@@ -1573,5 +1573,8 @@ ol li {
     #local-search #local-search-result {
         height: 60vh;
     }
+    #local-search .search-dialog .search-result-list {
+        max-height: calc(70vh - 130px);
+    }
 }
 
