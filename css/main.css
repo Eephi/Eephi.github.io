@@ -904,9 +904,10 @@ h6 {
 .home-title {
     color: #fff;
     font-family: 'Fredericka the Great',Mulish,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
-    font-size: 3.5em;
+    font-size: 42px;
     line-height: 1.2;
     margin: 0.625rem 0;
+    margin-bottom: 0.9375em;
 }
 #home-head #home-info .info .wrap h1 {
     color: #fff;

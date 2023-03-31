@@ -3,9 +3,9 @@
 <html lang="zh-cn">
     <head>
         <meta charset="UTF-8" />
-        <title>Hexo 主题 Shoka &amp; multi-markdown-it 渲染器使用说明 | エーフィちゃんのホームページ</title>
+        <title>Hexo 主题 Shoka &amp; multi-markdown-it 渲染器使用说明 | エーフィのホームページ</title>
         <meta name="author" content="MsEspeon" />
-        <meta name="description" content="小孩子不懂事，标题取着玩的" />
+        <meta name="description" content="MsEspeon" />
         <meta name="keywords" content="" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
         <link rel="icon" href="/images/favicon.jpeg" />
@@ -34,11 +34,6 @@
 />
 <script src="/js/lib/highlight.js"></script>
 
-
-<script src="https://cdn.staticfile.org/KaTeX/0.16.4/katex.min.js"></script>
-<script src="https://cdn.staticfile.org/KaTeX/0.16.4/contrib/auto-render.min.js"></script>
-<link rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.16.4/katex.min.css" />
-<script src="/js/lib/math.js"></script>
 
 
 <script src="/js/lib/preview.js"></script>
@@ -140,7 +135,7 @@
                     <nav id="menu" ref="menu">
     <div class="desktop-menu">
         <a class="title" href="/">
-            <span>エーフィちゃんのホームページ</span>
+            <span>エーフィのホームページ</span>
         </a>
         
         <a href="/">
@@ -177,7 +172,7 @@
         <div class="curtain" v-show="showMenu" @click="showMenu = !showMenu"></div>
         <div class="title" @click="showMenu = !showMenu">
             <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;エーフィちゃんのホームページ</span>
+            <span>&emsp;エーフィ</span>
         </div>
         <transition name="slide">
         <div class="items" v-show="showMenu">
@@ -341,7 +336,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/test/" style="color: #00a596">test</a>
+                <a href="/tags/test/" style="color: #ffa2c4">test</a>
             </span>
             
         </span>
@@ -607,6 +602,10 @@ background:
     
     
     
+    <div id="comment">
+        <div id="giscus-container" class="giscus"></div>
+    </div>
+    
     
     
     
@@ -616,7 +615,7 @@ background:
     <div id="footer-wrap">
         <div>
             &copy;
-            2022 - 2023 エーフィちゃんのホームページ
+            2022 - 2023 エーフィ
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
@@ -642,6 +641,23 @@ background:
         <script src="/js/main.js"></script>
         
         
+
+<script
+    src="https://giscus.app/client.js"
+    data-repo="eephi/eephi.github.io"
+    data-repo-id="R_kgDOJE0Nfw"
+    data-category="General"
+    data-category-id="DIC_kwDOJE0Nf84CVbq8"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="zh-CN"
+    crossorigin
+    async
+></script>
 
 
 
