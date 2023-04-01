@@ -1088,10 +1088,13 @@ ol li {
     font-size: 1.43em;
 }
 .article-sort-item.year:hover:before {
-    border-color: #49b1f5
+    border-color: #49b1f5;
 }
 .article-sort-item.year:before {
-    border-color: #ff728b
+    border-color: #ff728b;
+}
+.article-sort-item.cat:before {
+    top: 27%;
 }
 .article-sort-item-time {
     color: #858585;
