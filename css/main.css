@@ -907,11 +907,13 @@ h6 {
     font-size: 42px;
     line-height: 1.2;
     margin: 0.625rem 0;
+    margin-bottom: 1em;
 }
 #home-head #home-info .info .wrap h1 {
     color: #fff;
-    font-size: 2.5em;
+    font-size: 48px;
     letter-spacing: .125rem;
+    margin-bottom: 2rem;
 }
 #home-head #home-info .info .wrap h3{
     color: #fff;
@@ -1592,6 +1594,14 @@ ol li {
     .article-sort-item.year:before{
         top: 30%;
     }
+    .home-title {
+        font-size: 36px;
+        margin-bottom: 0;
+    }
+    #home-head #home-info .info .wrap h1 {
+        font-size: 42px;
+    }
+
 }
 .category-list {
     padding-left: 40px;

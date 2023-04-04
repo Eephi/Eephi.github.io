@@ -85,7 +85,7 @@
                 <div id="main" v-show="!loading">
                     <div id="home-head">
                         
-                        <div id="home-background" ref="homeBackground" data-image="/images/background/eriri.jpg,/images/background/yurucamp.jpg"></div>
+                        <div id="home-background" ref="homeBackground" data-image="/images/background/umi.png,/images/background/matsuri.jpg,/images/background/yurucamp.jpg"></div>
                         
                         
                         <div id="home-info" @click="homeClick">
@@ -141,7 +141,12 @@
     </div>
     <div id="mobile-menu">
         <div class="curtain" v-show="showMenu" @click="showMenu = !showMenu"></div>
-        <div class="title" @click="showMenu = !showMenu">
+        <div class="title" @click="showMenu = !showMenu">            
+            
+                <a @click="searchClick" style="cursor: pointer;">
+                    <i class="fa-solid fa-search fa-fw" style="padding: 10px;"></i>
+                </a>
+            
             <i class="fa-solid fa-bars fa-fw"></i>
             <span>&emsp;エーフィちゃんのブログ</span>
         </div>
@@ -190,16 +195,6 @@
                         <i class="fa-solid fa-tags fa-fw"></i>
                     </div>
                     <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
-                </div>
-            </a>
-            
-            
-            <a @click="searchClick" style="cursor: pointer;">
-                <div class="item">
-                    <div style="min-width: 20px; max-width: 50px; width: 10%">
-                        <i class="fa-solid fa-search fa-fw"></i>
-                    </div>
-                    <div style="min-width: 100px; max-width: 150%; width: 20%">Search</div>
                 </div>
             </a>
             
@@ -256,7 +251,7 @@
         
         
         <span>
-            <a href="/tags/hello/" style="background: #00a596">
+            <a href="/tags/hello/" style="background: #00bcd4">
                 <span class="icon">
                     <i class="fa-solid fa-tags fa-fw"></i>
                 </span>
@@ -267,7 +262,7 @@
         
         
         <span>
-            <a href="/tags/world/" style="background: #ff7d73">
+            <a href="/tags/world/" style="background: #00a596">
                 <span class="icon">
                     <i class="fa-solid fa-tags fa-fw"></i>
                 </span>
